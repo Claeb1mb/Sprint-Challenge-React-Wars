@@ -11,7 +11,7 @@ import Character from "./components/Character";
 // sync up with, if any.
 
 const App = () => {
-  const [rmData, setRmData] = useState();
+  const [rmData, setRmData] = useState("");
   useEffect(() => {
     // Get single character read docs ... updated chose character 15
     Axios.get("https://rickandmortyapi.com/api/character/15")
